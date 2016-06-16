@@ -13,7 +13,7 @@
 
           <ul class="nav nav-tabs">
             <li role="presentation"><a href="/user">Home</a></li>
-            <li role="presentation"><a href="/review/new">Add Book and Review</a></li>
+            <li role="presentation"><a href="/books/new">Add Book and Review</a></li>
             <li role="presentation"><a href="/user/logout">Logout</a></li>
 
           </ul>
@@ -31,7 +31,7 @@
             <h3>Posted Reviews on these books:</h3>
                 <div id="sub_reviews">
                     {% for reviews in review_titles %}
-                        <p> <a href="/review/{{reviews['id']}}">{{reviews['title']}}</a> </p>
+                        <p> <a href="/books/{{reviews['id']}}">{{reviews['title']}}</a> </p>
                     {% endfor %}
                 </div>
         </div>
